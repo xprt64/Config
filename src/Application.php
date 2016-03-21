@@ -1,13 +1,13 @@
 <?php
 /**
  * @copyright Constantin Galbenu <xprt64@gmail.com>
- * @link        https://github.com/xprt64/php-css
+ * @link        https://github.com/xprt64/Config
  * @license     https://opensource.org/licenses/MIT MIT License
  */
 
-namespace Gik;
+namespace xprt64\Config;
 
-class AppConfig
+class Application
 {
 	/**
 	 * @var Config
@@ -16,7 +16,7 @@ class AppConfig
 
 	public static function setConfig(Config $config)
 	{
-		static::$config =   $config;
+		static::$config = $config;
 	}
 
 	public static function getConfig()
@@ -26,14 +26,11 @@ class AppConfig
 
 	public static function getConfigFiles()
 	{
-		if(is_callable([static::$config, 'getFiles']))
-			return static::$config->getFiles();
-		
-		return [];
+		return static::$config->getParsedFiles();
 	}
 
-	public static function get($optionName, $subOptionName = null)
+	public static function get(...$optionPathComponents)
 	{
-		return static::$config->get($optionName, $subOptionName);
+		return static::$config->get(...$optionPathComponents);
 	}
 }

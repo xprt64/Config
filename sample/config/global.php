@@ -1,7 +1,7 @@
 <?php
 /**
  * @copyright Constantin Galbenu <xprt64@gmail.com>
- * @link        https://github.com/xprt64/php-css
+ * @link        https://github.com/xprt64/Config
  * @license     https://opensource.org/licenses/MIT MIT License
  */
 

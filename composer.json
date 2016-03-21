@@ -9,10 +9,13 @@
   ],
   "autoload": {
     "psr-4": {
-      "Gik\\": "src/Gik/"
+      "xprt64\\Config\\": "src"
     }
   },
   "require": {
+    "php": ">=7.0"
+  },
+  "require-dev": {
     "phpunit/phpunit": "5.0.*"
   }
 }

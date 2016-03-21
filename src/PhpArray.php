@@ -1,19 +1,17 @@
 <?php
 /**
  * @copyright Constantin Galbenu <xprt64@gmail.com>
- * @link        https://github.com/xprt64/php-css
+ * @link        https://github.com/xprt64/Config
  * @license     https://opensource.org/licenses/MIT MIT License
  */
 
-namespace Gik\Config;
+namespace xprt64\Config;
 
-use Gik\Config;
-
-class PhpArray  extends Config
+class PhpArray extends Base
 {
 	public function __construct(array $data = [])
 	{
-		$this->data =   $data;
+		$this->data = $data;
 	}
 
 }
