@@ -13,6 +13,6 @@
     }
   },
   "require": {
-    "phpunit/phpunit": "5.2.12"
+    "phpunit/phpunit": "5.0.*"
   }
 }
