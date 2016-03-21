@@ -26,7 +26,7 @@ specified in an environment variable
 ```php
     $configObj    =    new \Gik\Config\PhpFiles([__DIR__ . '/../config/global.php']);
 
-    if(getenv('CRM_CONFIG'))
+    if(getenv('CRM_CONFIG'))//exemple: CRM_CONFIG=config/my-dev-machine.php
     {
         $localFile  =   __DIR__ . '/../' . getenv('CRM_CONFIG');
 
