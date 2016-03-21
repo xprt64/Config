@@ -7,7 +7,7 @@
 
 namespace Gik;
 
-class Config
+abstract class Config
 {
 	protected   $data   =   [];
 
