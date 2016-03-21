@@ -36,6 +36,9 @@ specified in an environment variable
 
     \Gik\AppConfig::setConfig($configObj);
 ```
+Then, in your application, use configuration options like this:
+
+`echo \Gik\AppConfig::get('username')` or `echo \Gik\AppConfig::get('db', 'name')`
 # Dependencies
 The only dependencies are only for dev & testing:
  - phpunit
